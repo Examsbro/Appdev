@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "323876512396",
+    "project_id": "forgotpass-46557",
+    "storage_bucket": "forgotpass-46557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323876512396:android:837436339efb7d747011a9",
+        "android_client_info": {
+          "package_name": "com.example.lab9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV3tzi8Kj7m-ANHk8Yedk6ofIpaNhajYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
