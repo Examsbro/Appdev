@@ -1,3 +1,28 @@
 android_build.gradle
-build script{
-          ext.kotin
+
+buildscript {
+    ext.kotlin_version = '1.9.20'
+    }
+ dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "com.google.gms:google-services:4.3.15"
+    }
+
+app_build.gradle
+
+plugins {
+    id "com.google.gms.google-services"
+}
+ defaultConfig {
+        minSdkVersion 21
+        multiDexEnabled true
+    }
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.android.support:multidex:1.0.3'
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
